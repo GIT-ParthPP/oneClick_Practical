@@ -42,14 +42,14 @@ nav.navbar.navbar-expand-lg {
 }
 
 .dropdown .btn-dark {
-  --bs-btn-bg: $transparent;
-  --bs-btn-border-color: $transparent;
-  --bs-btn-hover-color: $white;
-  --bs-btn-hover-bg: $transparent;
-  --bs-btn-hover-border-color: $transparent;
-  --bs-btn-active-color: $white;
-  --bs-btn-active-bg: $transparent;
-  --bs-btn-active-border-color: $transparent;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
 }
 
 .dropdown-toggle::after {
@@ -64,59 +64,59 @@ nav.navbar.navbar-expand-lg {
 }
 
 .btn-outline-success {
-  --bs-btn-color: $outlineSuccess;
-  --bs-btn-border-color: $outlineSuccess;
-  --bs-btn-hover-color: $black;
-  --bs-btn-hover-bg: $outlineSuccess;
-  --bs-btn-hover-border-color: $outlineSuccess;
-  --bs-btn-active-bg: $outlineSuccess;
-  --bs-btn-active-border-color: $outlineSuccess;
-  --bs-btn-disabled-color: $outlineSuccess;
-  --bs-btn-disabled-border-color: $outlineSuccess;
+  --bs-btn-color: #c0f497;
+  --bs-btn-border-color: #c0f497;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: #c0f497;
+  --bs-btn-hover-border-color: #c0f497;
+  --bs-btn-active-bg: #c0f497;
+  --bs-btn-active-border-color: #c0f497;
+  --bs-btn-disabled-color: #c0f497;
+  --bs-btn-disabled-border-color: #c0f497;
 }
 
 .btn-dark {
-  --bs-btn-bg: $transparent;
-  --bs-btn-border-color: $transparent;
-  --bs-btn-hover-bg: $transparent;
-  --bs-btn-hover-border-color: $transparent;
-  --bs-btn-active-bg: $transparent;
-  --bs-btn-active-border-color: $transparent;
-  --bs-btn-disabled-bg: $transparent;
-  --bs-btn-disabled-border-color: $transparent;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: transparent;
 }
 
 .btn-primary {
-  --bs-btn-bg: $primaryColor;
-  --bs-btn-border-color: $primaryColor;
-  --bs-btn-hover-bg: $primaryColor;
-  --bs-btn-hover-border-color: $primaryColor;
-  --bs-btn-active-bg: $primaryColor;
-  --bs-btn-active-border-color: $primaryColor;
-  --bs-btn-disabled-bg: $primaryColor;
-  --bs-btn-disabled-border-color: $primaryColor;
+  --bs-btn-bg: #28a263;
+  --bs-btn-border-color: #28a263;
+  --bs-btn-hover-bg: #28a263;
+  --bs-btn-hover-border-color: #28a263;
+  --bs-btn-active-bg: #28a263;
+  --bs-btn-active-border-color: #28a263;
+  --bs-btn-disabled-bg: #28a263;
+  --bs-btn-disabled-border-color: #28a263;
 }
 
 .btn-secondary {
-  --bs-btn-bg: $secondaryColor;
-  --bs-btn-border-color: $secondaryColor;
-  --bs-btn-hover-bg: $secondaryColor;
-  --bs-btn-hover-border-color: $secondaryColor;
-  --bs-btn-active-bg: $secondaryColor;
-  --bs-btn-active-border-color: $secondaryColor;
-  --bs-btn-disabled-bg: $secondaryColor;
-  --bs-btn-disabled-border-color: $secondaryColor;
+  --bs-btn-bg: #313131;
+  --bs-btn-border-color: #313131;
+  --bs-btn-hover-bg: #313131;
+  --bs-btn-hover-border-color: #313131;
+  --bs-btn-active-bg: #313131;
+  --bs-btn-active-border-color: #313131;
+  --bs-btn-disabled-bg: #313131;
+  --bs-btn-disabled-border-color: #313131;
 }
 
 .btn-outline-light {
-  --bs-btn-color: $white;
-  --bs-btn-border-color: $white;
-  --bs-btn-hover-bg: $white;
-  --bs-btn-hover-border-color: $white;
-  --bs-btn-active-bg: $white;
-  --bs-btn-active-border-color: $white;
-  --bs-btn-disabled-color: $white;
-  --bs-btn-disabled-border-color: $white;
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #ffffff;
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-border-color: #ffffff;
 }
 
 .btn {
@@ -419,6 +419,8 @@ input:checked + .sliding:before {
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
+    color: $white;
+    border: 1px solid $white;
 
     &::after {
       content: "";
@@ -444,19 +446,22 @@ input:checked + .sliding:before {
       z-index: -1;
     }
 
-    &:hover::before {
-      width: 100%;
+    &:hover {
+      color: $black;
+      &::before {
+        width: 100%;
+      }
     }
   }
 
   .product-slider {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     .slick-list.draggable {
       height: 400px;
     }
     .slick-prev.slick-arrow {
       position: absolute;
-      bottom: 0;
+      bottom: 20px;
       left: 110px;
       background: $transparent
         url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDcgMTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik02LjI5MjUgMC4yOTI1QzUuOTAyNSAtMC4wOTc1IDUuMjcyNSAtMC4wOTc1IDQuODgyNSAwLjI5MjVMMC4yOTI1IDQuODgyNUMtMC4wOTc1IDUuMjcyNSAtMC4wOTc1IDUuOTAyNSAwLjI5MjUgNi4yOTI1TDQuODgyNSAxMC44ODI1QzUuMjcyNSAxMS4yNzI1IDUuOTAyNSAxMS4yNzI1IDYuMjkyNSAxMC44ODI1QzYuNjgyNSAxMC40OTI1IDYuNjgyNSA5Ljg2MjUgNi4yOTI1IDkuNDcyNUwyLjQxMjUgNS41ODI1TDYuMjkyNSAxLjcwMjVDNi42NzI1IDEuMzEyNSA2LjY3MjUgMC42NzI1IDYuMjkyNSAwLjI5MjVaIiBmaWxsPSIjNDU0ODVGIi8+Cjwvc3ZnPgo=)
@@ -479,7 +484,7 @@ input:checked + .sliding:before {
 
     .slick-next.slick-arrow {
       position: absolute;
-      bottom: 0;
+      bottom: 20px;
       left: 180px;
       color: $buttonBorder;
       background: $transparent

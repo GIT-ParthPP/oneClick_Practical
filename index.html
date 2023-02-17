@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand me-5" href="#">
+                    <img src="assets/logo.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                        <li class="nav-item dropdown me-4">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About UI_OC?
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Features
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resources
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Company
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-success me-4" type="submit">Get Demo</button>
+                        <button class="btn btn-dark me-4" type="submit">Contact Sales</button>
+                        <button class="btn btn-dark" type="submit">
+                            <img src="assets/search.svg" alt="search">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex justify-content-center flex-column">
+                    <div class="left-side-area">
+                        <div class="rating-area mb-4">
+                            <span>
+                                <img src="assets/start-banner.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/start-banner.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/start-banner.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/start-banner.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/start-banner.svg" alt="">
+                            </span>
+                            <span class="rating-text">
+                                Based on <b>10,000+</b> reviews
+                            </span>
+                        </div>
+                        <div class="header-text mb-5">
+                            <h1 class="my-5">Seamless solution <br />
+                                with our magic!</h1>
+                            <p>UI_OC is the project management platform that aims for teams to achieve an
+                                efficient dream
+                                management</p>
+                        </div>
+                        <div class="button-area d-flex mb-5">
+                            <p>Start work efficiently with <br />
+                                UI_OC SaaS product
+                            </p>
+                            <button class="btn btn-primary">Get a Free Demo</button>
+                        </div>
+                        <div class="d-flex align-items-center mt-5">
+                            <img class="me-5" src="assets/banner-logo-1.svg" alt="">
+                            <img class="mx-5" src="assets/banner-logo-2.svg" alt="">
+                            <img class="ms-5" src="assets/banner-logo-3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-between flex-column">
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="sliding round"></span>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="mx-4 mt-4">
+                                        <img class="w-100" src="assets/chart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="setting-icon">
+                                        <img src="assets/settings.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <button class="ring-icon mb-4">
+                                        <img src="assets/ring-icon.svg" width="23" alt="">
+                                    </button>
+                                    <img src="assets/spend-box.svg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="assets/side-vector.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="plus-icon">
+                                        <img src="assets/plus.svg" width="23" alt="">
+                                    </button>
+                                    <div class="slider-area">
+                                        <section class="regular autoplay slider">
+                                            <div>
+                                                <img src="assets/vector-emoji-1.svg">
+                                            </div>
+                                            <div>
+                                                <img src="assets/vector-emoji-2.svg">
+                                            </div>
+                                            <div>
+                                                <img src="assets/vector-emoji-3.svg">
+                                            </div>
+                                            <div>
+                                                <img src="assets/vector-emoji-1.svg">
+                                            </div>
+                                            <div>
+                                                <img src="assets/vector-emoji-2.svg">
+                                            </div>
+                                            <div>
+                                                <img src="assets/vector-emoji-3.svg">
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="debit-card d-flex justify-content-between flex-column mb-4">
+                                <div class="card-type">debit</div>
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="card-number" id="card-number-show">**** **** **** 0329</div>
+                                        <div class="valid-year d-flex align-items-center justify-content-between">
+                                            <div class="valid-text">VALID <br />
+                                                THRU</div>
+                                            <div class="expire-date" id="expire-number-show">
+                                                03/24
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>Cameron Williamson</div>
+                                        <div>
+                                            <img src="assets/master-logo.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="stats-area d-flex align-items-center justify-content-between border-bottom-custom pb-5">
+                                <div class="d-flex justify-content-between flex-column">
+                                    <span class="light-small-text mb-3">balance</span>
+                                    <span class="balance-text">$101,291.12</span>
+                                </div>
+                                <div class="d-flex justify-content-between flex-column">
+                                    <span class="light-small-text mb-3">gains/losses</span>
+                                    <span class="gain-label">$45264800</span>
+                                </div>
+                            </div>
+
+                            <div class="transfer-area">
+                                <h3 class="my-3">quick transfer</h3>
+                                <div class="row small-scale">
+                                    <div class="col-12 ps-0">
+                                        <button class="plus-icon">
+                                            <img src="assets/plus.svg" width="23" alt="">
+                                        </button>
+                                        <div class="slider-area">
+                                            <section class="regular autoplay slider">
+                                                <div>
+                                                    <img src="assets/vector-emoji-1.svg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/vector-emoji-2.svg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/vector-emoji-3.svg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/vector-emoji-1.svg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/vector-emoji-2.svg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/vector-emoji-3.svg">
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="my-3">Card Number</h3>
+                                    <input onkeyup="cardNumberDetect()" class="card-number-input" id="card-number"
+                                        type="number" placeholder="XXXX XXXX XXXX XXXX" maxLength="16">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="my-3">expire date</h3>
+                                        <input onkeyup="expDateDetect()" class="card-number-input no-bg-img"
+                                            type="number" id="expire-number" placeholder="--/--" maxLength="4">
+                                        <button class="btn btn-primary d-block w-100 mt-4">send money</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="my-3">cvv</h3>
+                                        <input class="card-number-input no-bg-img" type="number" placeholder="----"
+                                            maxlength="4">
+                                        <button class="btn btn-secondary d-block w-100 mt-4">save draft</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose-slider-section">
+        <div class="container">
+            <div class="d-flex align-items-end justify-content-between">
+                <h2>Choose from over 10+ <br /> cutting—edge products</h2>
+                <button class="btn btn-outline-light rounded-5 product-btn">See all products</button>
+            </div>
+        </div>
+        <div class="slider-section">
+            <div class="product-slider">
+                <div class="product-item first-card">
+                    <div class="upper-area">
+                        <img src="assets/product-card-1.png" alt="">
+                    </div>
+                    <div class="lower-area">
+                        <p class="product-title">Product title</p>
+                        <p class="product-description">Short description goes here</p>
+                    </div>
+                </div>
+                <div class="product-item second-card">
+                    <div class="upper-area">
+                        <img src="assets/product-card-2.png" alt="">
+                    </div>
+                    <div class="lower-area">
+                        <p class="product-title">Product title</p>
+                        <p class="product-description">Short description goes here</p>
+                    </div>
+                </div>
+                <div class="product-item third-card">
+                    <div class="upper-area">
+                        <img src="assets/product-card-3.png" alt="">
+                    </div>
+                    <div class="lower-area">
+                        <p class="product-title">Product title</p>
+                        <p class="product-description">Short description goes here</p>
+                    </div>
+                </div>
+                <div class="product-item fourth-card">
+                    <div class="upper-area">
+                        <img src="assets/product-card-4.png" alt="">
+                    </div>
+                    <div class="lower-area">
+                        <p class="product-title">Product title</p>
+                        <p class="product-description">Short description goes here</p>
+                    </div>
+                </div>
+                <div class="product-item fifth-card">
+                    <div class="upper-area">
+                        <img src="assets/side-vector.svg" alt="">
+                    </div>
+                    <div class="lower-area">
+                        <p class="product-title">Product title</p>
+                        <p class="product-description">Short description goes here</p>
+                    </div>
+                </div>
+                <div class="product-item sixth-card">
+                    <div class="upper-area">
+                        <img src="assets/product-card-6.png" alt="">
+                    </div>
+                    <div class="lower-area">
+                        <p class="product-title">Product title</p>
+                        <p class="product-description">Short description goes here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
